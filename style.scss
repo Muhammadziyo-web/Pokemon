@@ -5,6 +5,7 @@
      padding: 0;
      box-sizing: border-box;
      font-family: 'Roboto', sans-serif;
+     overflow-x: hidden;
  }
 
  body {
@@ -149,4 +150,43 @@
 
 .remove{
     z-index: 99999;
+}
+.inp{
+    min-width: 180px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+@media only screen and (max-width:818px){
+    .wrapper{
+        width: 100%;
+    }
+    .logo{
+        width: 90%;
+    }
+    .right{
+        max-width: 70vw;
+        min-width: 300px ;
+    }
+}
+@media only screen and (max-width:400px){
+    .card{
+        transform: scale(0.8);
+        margin: -30px;
+        &:hover{
+            transform: scale(0.81);
+        }
+        .input-wrapper{
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    .liked{
+        top: 0px;
+        right: 20px;
+    }
+    .card-wrapper{
+        margin-top: 20px;
+    }
 }
