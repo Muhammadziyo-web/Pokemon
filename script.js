@@ -65,21 +65,22 @@ heart.forEach((e, i) => {
             e.addEventListener('click', () => {
                 // likedArray.splice(likedArray.indexOf(e), 1)
                 wrapper2.innerHTML = ""
-                likedArray.forEach((e)=>{
-                    let card2 = document.createElement('div')
-                    card2.classList.add('card')
-                    card2.innerHTML = `<img src="${e.img}" alt="${e.name}" class="img">
-                    <span></span>
-                    <h2>${e.name}</h2>
-                    <h3>${e.type[0]} , ${e.type[1]}</h3>
-                    <h4>${e.weight}</h4>
-                    <h4 id="age">${e.height}</h4>
-                    <i class="bi bi-trash remove"></i>
-                    `;
-                    wrapper2.appendChild(card2)
+                // e.innerHTML = ''
+                // likedArray.forEach((e)=>{
+                //     let card2 = document.createElement('div')
+                //     card2.classList.add('card')
+                //     card2.innerHTML = `<img src="${e.img}" alt="${e.name}" class="img">
+                //     <span></span>
+                //     <h2>${e.name}</h2>
+                //     <h3>${e.type[0]} , ${e.type[1]}</h3>
+                //     <h4>${e.weight}</h4>
+                //     <h4 id="age">${e.height}</h4>
+                //     <i class="bi bi-trash remove"></i>
+                //     `;
+                //     wrapper2.appendChild(card2)
 
 
-                })
+                // })
             })
 
         })
